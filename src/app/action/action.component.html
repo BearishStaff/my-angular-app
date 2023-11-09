@@ -1,0 +1,13 @@
+<div style="padding: 10px">
+    <button (click)="decrease(decStep.value)" (numberChange)="logText($event)">-</button>
+<input type="text" [value]="value">
+<button (click)="increase(incStep.value)" (numberChange)="logText($event)">+</button>
+</div>
+<div style="padding: 5px">
+    <span>Increase step : </span>
+    <input type="text" #incStep>
+</div>
+<div style="padding: 5px">
+    <span>Decrease step : </span>
+    <input type="text" #decStep>
+</div>
