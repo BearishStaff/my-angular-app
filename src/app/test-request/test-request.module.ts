@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestRequestGetComponent } from './test-request-get/test-request-get.component';
-
+import { TableModule } from 'primeng/table';
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { TestRequestGetComponent } from './test-request-get/test-request-get.com
     TestRequestGetComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TableModule
   ],
   exports: [
     TestRequestGetComponent

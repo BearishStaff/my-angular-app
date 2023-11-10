@@ -1,0 +1,6 @@
+<div class = "shopping-cart-container" [class.clickable]="value > 0">
+    <i class="pi pi-shopping-cart" style="transform: scale(2);"></i>
+    @if(value>0){
+        <div class="notification">{{value}}</div>
+    }
+</div>

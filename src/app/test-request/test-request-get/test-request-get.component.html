@@ -1,9 +1,31 @@
 <div>
     <label>name: </label><input #searchWord type="text">
-    <button (click)="searchName(searchWord.value)">search</button>
+    <!-- <button (click)="searchName(searchWord.value)">search</button> -->
+    <button (click)="getSpringboot()">search</button>
+
 </div>
-<div *ngFor="let item of indexList" style="margin: 10px">
-    <span>{{item.index}}</span><br>
+
+<!-- <p-table [value]="cars">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Vin</th>
+            <th>Year</th>
+            <th>Brand</th>
+            <th>Color</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <tr>
+            <td>{{car.vin}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.brand}}</td>
+            <td>{{car.color}}</td>
+        </tr>
+    </ng-template>
+</p-table> -->
+
+<div *ngFor="let item of springList" style="margin: 10px">
+    <!-- <span>{{item.index}}</span><br> -->
     <span>{{item.name}}</span><br>
-    <span>{{item.url}}</span><br>
+    <!-- <span>{{item.url}}</span><br> -->
 </div>

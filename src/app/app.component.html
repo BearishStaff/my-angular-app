@@ -1,4 +1,12 @@
-<!-- <app-sum style="margin: 30px"></app-sum>
+<!-- <app-shopping-search (onSearch)="searchProduct($event)"></app-shopping-search>
+<div>
+  <div *ngFor="let product of filteredProduct">
+    {{product.name}}
+  </div> 
+</div> -->
+<!-- <app-shopping-cart [value]="1"></app-shopping-cart> -->
+
+<app-sum style="margin: 30px"></app-sum>
 
 <app-test-request-get style="margin: 30px"></app-test-request-get>
 
@@ -12,7 +20,7 @@
 
   <button (click)="pushFreddy()">push</button>
   <button (click)="unshiftFreddy()">unshift</button>
-</div> -->
+</div>
 <div>
     @if(active){
     <app-action [(value)]="appCounter"></app-action>

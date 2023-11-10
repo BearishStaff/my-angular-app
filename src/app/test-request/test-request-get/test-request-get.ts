@@ -8,3 +8,15 @@ export interface Index {
   name: string;
   url: string;
 }
+
+export interface Car {
+  vin : any;
+  year : any;
+  brand : any;
+  color : any;
+}
+
+export interface ViewAccount{
+  id: string;
+  name: string;
+}

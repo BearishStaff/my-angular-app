@@ -13,6 +13,12 @@ import { SumComponent } from './sum/sum.component';
 
 import { FormsModule } from '@angular/forms';
 
+import {TableModule} from 'primeng/table'
+import {InputTextModule} from 'primeng/inputtext'
+import {ButtonModule} from 'primeng/button'
+
+import { ShoppingModule } from './shopping/shopping.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +33,10 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     TestRequestModule,
     FormsModule,
+    TableModule,
+    InputTextModule,
+    ButtonModule,
+    ShoppingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Product } from './shopping/model/product';
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,16 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
 
   stringList : string[] = ['Freddy','Bonnie','Chica','Foxy'];
+
+  products: Product[] = [
+    {name:'odds', description:'101', price: 500},
+    {name:'dods', description:'102', price: 100},
+    {name:'ddos', description:'103', price: 100},
+    {name:'odsd', description:'104', price: 100},
+    {name:'sodd', description:'105', price: 100},
+  ];
+
+  filteredProduct: Product[] = this.products;
 
   value = 0 ;
   inputBuffer = 0;
@@ -20,6 +32,16 @@ export class AppComponent {
   num = ~~(10/3);
 
   active: boolean = false; 
+
+  searchProduct(search: string){
+    this.filteredProduct = this.products.filter(product=>{
+      const productName = product.name.toLocaleLowerCase();
+      const searchName = search.toLocaleLowerCase();
+      return productName.indexOf(searchName) !== -1
+    }
+    )
+  }
+
   activateToggle(){
     this.active = !this.active;
   }

@@ -1,7 +1,7 @@
 <div>
     <span>Summary number from array</span>
     <br>
-    <input [(ngModel)]="value" type="text" #inputSum placeholder="ex. 1,0,-4,5,3">
+    <input pInputText [(ngModel)]="value" type="text" #inputSum placeholder="ex. 1,0,-4,5,3">
     <button (click)="sumNumber(inputSum.value)">Solve</button>
 <br>
     <label>The best of sum is : </label>
